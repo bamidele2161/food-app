@@ -19,6 +19,15 @@
 .nav-item{
     font-weight: bold;
 }
+#get-access{
+    font-weight: bold;
+}
+#get-access:hover{
+    background-color: rgb(255, 140, 0);
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
 .navbar-nav{
     font-size: 1rem;
 }
@@ -34,15 +43,7 @@
     margin-bottom: 1rem;
     font-family: 'Lato', sans-serif;
 }
-#get-access{
-    font-weight: bold;
-}
-#get-access:hover{
-    background-color: rgb(255, 140, 0);
-    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
-    transition: all 0.2s ease-in-out;
-    color: white;
-}
+
 main{
 }
 .index-container{
@@ -81,11 +82,10 @@ main{
 }
 .order{
     border: none;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 10px;
     background: orange;
     color: white;
-    padding: 10px;
+    padding: 15px;
 }
 .order:hover{
     background-color: rgb(255, 140, 0);
@@ -99,15 +99,17 @@ main{
     background-image: white;
     box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-    padding: 10px;
+    padding: 15px;
     margin-left: 40px;
+    border-radius: 10px;
     border: none;
 }
 .menu:hover{
-    background-color: rgb(250, 234, 214);
+    background-color: orange;
     box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-    color: orange;
+    color: white;
+    text-decoration: none;
 }
 .right{
     grid-area: right;
@@ -119,7 +121,7 @@ main{
 }
 .hero-section{
     height: 70vh;
-    padding: 50px;
+    padding: 50px 0 50px 80px;
 }
 .menu-header{
     display: flex;
@@ -187,7 +189,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
-    padding: 0 50px;
+    padding: 0 0 0 80px;
 }
 .dish-item-card{
     background-color: rgb(255, 241, 216) !important;
@@ -220,6 +222,7 @@ main{
 }
 .dish-paragraph{
     font-size: 15px;
+    padding: 0 7px;
 }
 .order-now{
     padding: 10px;
@@ -236,6 +239,7 @@ main{
     color: orange;
     box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 .best{
     height: 80vh;
@@ -300,15 +304,15 @@ main{
     border-radius: 10px;
     background: orange;
     color: white;
-    padding: 10px;
     border: none;
-    padding: 15px;
+    padding: 10px;
 }
 .see-more:hover{
     background-color: rgb(255, 140, 0);
     box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
     color: white;
+    text-decoration: none;
 }
 
 .best-right{
@@ -349,7 +353,7 @@ main{
     grid-template-areas: "app-left app-right";
 }
 .app-left{
-    padding: 30px 10px 20px 50px;
+    padding: 30px 10px 20px 80px;
     grid-area: app-left;
 }
 
@@ -424,6 +428,7 @@ main{
 }
 .google-badge:hover{
     cursor: pointer;
+    color: white;
     text-decoration: none;
     background-color: rgb(255, 140, 0);
     box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
@@ -504,6 +509,7 @@ footer img{
 }
 .footer a{
     color: black;
+    padding: 5px;
 
 }
 .footer a:hover{
@@ -532,8 +538,21 @@ i{
 
 /*media queries*/
 @media (min-width: 300px) and (max-width: 500px) {
+    .nav-item{
+        font-size: 0.8rem;
+        padding: 0rem;
+    }
+    #get-access{
+        font-size: 0.7rem;
+        margin-left: 250px;
+    }
+    .collapse{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
     footer{
-        height: 74vh;
+        height: 77vh;
     }
     .footer{
         height: 74%;
@@ -543,7 +562,7 @@ i{
         "column_one"
         "column_two"
         "column_three";
-        font-size: 12px;
+        font-size: 14px;
     }
     footer img{
         width: 50px;
@@ -732,14 +751,17 @@ i{
     }
     .dish-paragraph{
         font-size: 13px;
+        padding: 0 5px;
     }
     .order-now{
         padding: 8px;
         font-size: 13px;
         margin-top: 15px;
     }
+   
     .hero-section{
         height: 170vh;
+        padding: 50px;
     }
     .our-menu{
         font-size: 30px;

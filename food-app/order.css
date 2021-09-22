@@ -16,6 +16,18 @@
     outline: 0;
     font-size: 1.05rem;
 }
+.nav-item{
+    font-weight: bold;
+}
+#get-access{
+    font-weight: bold;
+}
+#get-access:hover{
+    background-color: rgb(255, 140, 0);
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
 .navbar-nav{
     font-size: 1rem;;
 }
@@ -322,6 +334,7 @@ footer img{
 }
 .footer a{
     color: black;
+    padding: 5px;
 }
 .footer a:hover{
     color: rgb(250, 63, 6);
@@ -351,6 +364,18 @@ i{
 
 /*media queries*/
 @media (min-width: 300px) and (max-width: 500px) {
+    .nav-item{
+        font-size: 0.8rem;
+        padding: 0rem;
+    }
+    #get-access{
+        font-size: 0.7rem;
+        margin-left: 250px;
+    }
+    .collapse{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .meal-search-box{
         width: 250px;
         margin-left: auto;
@@ -399,7 +424,7 @@ i{
     
     }
     footer{
-        height: 74vh;
+        height: 77vh;
     }
     .footer{
         height: 74%;
@@ -409,7 +434,7 @@ i{
         "column_one"
         "column_two"
         "column_three";
-        font-size: 12px;
+        font-size: 14px;
     }
     footer img{
         width: 50px;

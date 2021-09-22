@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./food-app/index.css">
-    <link rel="icon" href="./BD.png" type="image/x-icon">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <link rel="icon" href="./food-app/BD.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
-    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>BD Food</title>
 </head>
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -95,8 +97,8 @@
                     <h3 class="dish-title">
                         Beef Sauce
                     </h3>
-                    <p class="dish-paragraph">A very quick and simple lunch or dinner idea, that you can pair with rice or whatever it is that suit you</p>
-                    <button class="order-now">Order Now</button>
+                    <p class="dish-paragraph">A very quick and simple lunch or dinner idea, that you can pair with  whatever it is that suit you</p>
+                    <a href="./food-app/order.html" class="order-now">Order Now</a>
                 </div>
 
                 <div class="dish-item-card">
@@ -105,7 +107,7 @@
                         Pizza 
                     </h3>
                     <p class="dish-paragraph">Wheat-based dough topped with tomatoes, cheese, and often various other ingredients</p>
-                    <button class="order-now">Order Now</button>
+                    <a href="./food-app/order.html" class="order-now">Order Now</a>
                 </div>
 
                 <div class="dish-item-card">
@@ -114,7 +116,7 @@
                         Beef🍔
                     </h3>
                     <p class="dish-paragraph">Roast beef drizzled with oil and season well with sea salt and black pepper</p>
-                    <button class="order-now">Order Now</button>
+                    <a href="./food-app/order.html" class="order-now">Order Now</a>
                 </div>
 
                 <div class="dish-item-card">
@@ -122,8 +124,8 @@
                     <h3 class="dish-title">
                         Suya
                     </h3>
-                    <p class="dish-paragraph">Beef Suya t is made with beef and spices which include peanuts, ginger, cayenne pepper, and some others.</p>
-                    <button class="order-now">Order Now</button>
+                    <p class="dish-paragraph">Beef Suya is made with beef and spices which include ginger, pepper, and some others.</p>
+                    <a href="./food-app/order.html" class="order-now">Order Now</a>
                 </div>
             </div>
         </div>
@@ -145,7 +147,7 @@
                     <h3 class="quality-title">Quality Maintain</h3>
                     <p class="fresh-paragraph">We ensure the maintenance of proper standards in our recipes.</p>
                 </div>
-                <button class="see-more">See More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                <a href="./food-app/order.html" class="see-more">See More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="best-right">
@@ -179,7 +181,7 @@
                     </form>
                 </div>
                 <div class="store-badges">
-                    <div class="google-badge">
+                    <a href="https://www.apple.com/app-store/" class="google-badge">
                         <div class="store-icon">
                             <i class="fab fa-apple"></i>
                         </div>
@@ -187,8 +189,8 @@
                             <span class="btn__text">Download on the</span> 
                             <span class="btn__storename">App Store</span>
                         </div>
-                    </div>
-                    <div class="google-badge" id="google">
+                    </a>
+                    <a href="https://play.google.com/store/apps" class="google-badge" id="google">
                         <div class="store-icon">
                             <i class="fab fa-google" id="goog"></i>
                         </div>
@@ -196,7 +198,7 @@
                             <span class="btn__text">Download on the</span> 
                             <span class="btn__storename">App Store</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
