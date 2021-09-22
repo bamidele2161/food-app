@@ -453,6 +453,9 @@ main{
 .btn-text:hover{
     text-decoration: none;
 }
+.address{
+    margin-top: -15px;
+}
 
 ul{
     float: right;
@@ -464,6 +467,7 @@ li{
 }
 footer{
     background-color: orange;
+    padding-bottom: 20px;
 }
 .name-owner{
     font-weight: bold;
@@ -481,9 +485,10 @@ footer{
 }
 footer img{
     background-color: orange;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 100%;
 }
 
@@ -495,12 +500,15 @@ footer img{
     grid-template-areas: 
     "column_one column_two column_three";
     margin-top: -30px;
+    font-size: 18px;
 }
 .footer a{
     color: black;
+
 }
 .footer a:hover{
-    color: rgb(227, 186, 174);
+    color: rgb(250, 63, 6);
+    text-decoration: none;
 }
 .column_one{
     padding: 20px;
@@ -517,25 +525,43 @@ footer img{
     grid-area: column_three;
 
 }
+
 i{
     text-align: left;
 }
 
 /*media queries*/
 @media (min-width: 300px) and (max-width: 500px) {
-
+    footer{
+        height: 74vh;
+    }
     .footer{
-        height: 100%;
+        height: 74%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
         "column_one"
         "column_two"
         "column_three";
+        font-size: 12px;
+    }
+    footer img{
+        width: 50px;
+        height: 50px;
+    }
+    .column_one{
+        padding: 0px 20px -10px 20px;
+    
+    }
+    .column_two{
+        padding-bottom: -10px;
+    }
+    .column_three{
+        padding-bottom: -10px;
+    
     }
     .food-app{
-        height: 100vh;
+        height: 102vh;
         display: grid;
         margin-top: 5px;
         grid-template-columns: 1fr;
@@ -546,9 +572,11 @@ i{
     }
     .app-left{
         padding: 60px 10px 20px 30px;
+        margin-top: 10px;
     }
     .app-image-div{
         width: 90%;
+
         
     }
     .app-image{
