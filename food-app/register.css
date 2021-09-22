@@ -143,6 +143,7 @@ footer img{
     "column_one column_two column_three";
     margin-top: -30px;
     font-size: 18px;
+    padding-left: 80px;
 }
 .footer a{
     color: black;
@@ -220,6 +221,7 @@ i{
         "column_two"
         "column_three";
         font-size: 14px;
+        padding-left: 10px;
     }
     footer img{
         width: 50px;
