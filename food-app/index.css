@@ -357,11 +357,11 @@ main{
     padding: 50px 0 0 200px;
 }
 .right-image{
-    margin-top: -90px;
+    margin-top: -60px;
 }
 .chef-image{
     height: 630px;
-    width: 110%;
+    width: 100%;
     position: relative;
     animation-name: chef-image;
     animation-duration: 3s;
@@ -721,7 +721,7 @@ i{
         font-size: 12px;
     }
     .best{
-        height: 118vh;
+        height: 120vh;
         margin-top: 70px;
         display: grid;
         grid-template-columns: 1fr;
@@ -773,10 +773,11 @@ i{
         padding: 50px 0 0 20px;
     }
     .right-image{
-        margin-top: 0px;
+        margin-top: -20px;
     }
     .chef-image{
         height: 350px;
+        width: 100%;
     }
     .relative-card{
         width: 100px;
@@ -795,7 +796,7 @@ i{
         font-size: 12px;
     }
     .hottest_dish{
-        height: 180vh;
+        height: 182vh;
     }
     .dish-headline{
         font-size: 30px;
@@ -833,7 +834,7 @@ i{
     }
    
     .hero-section{
-        height: 170vh;
+        height: 173vh;
         padding: 50px;
     }
     .our-menu{
