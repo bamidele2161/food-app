@@ -338,9 +338,11 @@ main{
     align-items: center;
     text-align: center;
     padding: 15px;
+    opacity: 0.7;
 }
 .users{
     font-weight: bold;
+    color: black;
 }
 
 

@@ -56,9 +56,29 @@
     font-family: 'Lato', sans-serif;
     
 }
+.signout{
+    height: 7vh;
+}
+
+#signout-btn{
+    background-color: orange !important;
+    color: white;
+    float: right;
+    
+}
+#signout-btn:hover{
+    background-color: rgb(255, 140, 0) !important;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+.welcome{
+    color: orange;
+    font-size: 20px;
+}
 .meal-search{
     margin: 2rem 0;
 }
+
 .real-search cite{
     font-size: 1rem;
 }
@@ -125,7 +145,7 @@
 .meal-card {
     background: #fff;
     border-radius: 10px;
-    height: 320px;
+    height: 330px;
     width: 310px;
     box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -365,6 +385,15 @@ i{
 
 /*media queries*/
 @media (min-width: 300px) and (max-width: 500px) {
+    .signout{
+        margin-bottom: 10px;
+    }
+    #signout-btn{
+        background-color: orange !important;
+        color: white;
+        float: right;
+        
+    }
     .nav-item{
         font-size: 0.8rem;
         padding: 0rem;

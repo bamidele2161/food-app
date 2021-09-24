@@ -1,3 +1,27 @@
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBYwxYb2JcEnsFlN023OWZ965mwWKRPHCs",
+    authDomain: "food-app-e7bb8.firebaseapp.com",
+    projectId: "food-app-e7bb8",
+    storageBucket: "food-app-e7bb8.appspot.com",
+    messagingSenderId: "145868232394",
+    appId: "1:145868232394:web:c2bd5d46a796e9d60d0633"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+console.log(auth);
+
+let signOutButton = document.getElementById("signout-btn")
+signOutButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("clicked")
+  auth.signOut()
+  alert("Signed Out")
+    window.location = '../index.html'
+})
+
+
 const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('meal-details-content');
@@ -70,3 +94,4 @@ function mealRecipeModal(meal) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+
