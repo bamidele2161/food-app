@@ -114,10 +114,41 @@ main{
 .right{
     grid-area: right;
 }
+.plate-sit{
+    border-radius: 100%;
+    background-color: orange;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+    width: 600px;
+    height: 600px;
+    margin: 50px 0 0 185px;
+    animation-name: plate-sit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes plate-sit {
+    
+    0%{ transform: translate(0, 0px);}
+    50%{ transform: translate(0, 15px);}
+    100%{ transform: translate(0, -0px);}
+}
 .plate{
     width: 100%;
     height: 650px;
+    position: relative;
+    top: -630px;
+    animation-name: plate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
+}
+@keyframes plate {
+    
+    0%{ transform: translate(0, 0px);}
+    50%{ transform: translate(0, 15px);}
+    100%{ transform: translate(0, -0px);}
 }
 .hero-section{
     height: 70vh;
@@ -128,7 +159,6 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 .our-menu{
     color: rgb(0, 0, 37);
@@ -152,10 +182,12 @@ main{
     justify-content: center;
     border-radius: 15px !important;
     
+    
 }
 .card:hover{
     background-color: orange !important;
     transition: all 0.2s ease-in-out !important;
+    transform: scale(1.1);
 }
 .icon{
     font-size: 50px;
@@ -172,6 +204,7 @@ main{
 
 .menu-title{
     margin-top: 20px;
+    font-size: 20px;
 }
 .hottest_dish{
     height: 70vh;
@@ -184,6 +217,7 @@ main{
 }
 .dish-headline{
     color: rgb(0, 0, 37);
+    margin-bottom: 40px;
 }
 .dish-card{
     display: grid;
@@ -210,18 +244,20 @@ main{
 .dish-item-card:hover{
     background-color: orange !important;
     transition: all 0.2s ease-in-out !important;
+    transform: scale(1.1);
 }
 .dish-image{
     width: 150px;
+    border-radius: 10px;
     height: 150px;
-    border-radius: 50px;
     margin-bottom: 20px;
+    
 }
 .dish-title{
     font-size: 20px;
 }
 .dish-paragraph{
-    font-size: 15px;
+    font-size: 14px;
     padding: 0 7px;
 }
 .order-now{
@@ -324,8 +360,19 @@ main{
 }
 .chef-image{
     height: 630px;
-    width: 100%;
+    width: 110%;
     position: relative;
+    animation-name: chef-image;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes chef-image {
+    
+    0%{ transform: translate(0, 0px);}
+    50%{ transform: translate(0, 15px);}
+    100%{ transform: translate(0, -0px);}
 }
 .relative-card{
     width: 150px;
@@ -369,6 +416,17 @@ main{
     justify-content: center;
     background-color: rgb(255, 241, 216);
     box-shadow: 0 1px 3px 1px rgba(0,0,0,0.2);
+    animation-name: app-image-div;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes app-image-div {
+    
+    0%{ transform: translate(0, 0px);}
+    50%{ transform: translate(0, 15px);}
+    100%{ transform: translate(0, -0px);}
 }
 .app-image{
     height: 600px;
@@ -538,6 +596,10 @@ footer img{
 i{
     text-align: left;
 }
+
+
+
+
 
 /*media queries*/
 @media (min-width: 300px) and (max-width: 500px) {
@@ -746,9 +808,12 @@ i{
       
     }
     .dish-image{
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 120px;
         margin-bottom: 15px;
+        margin-top: -60px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
     .dish-title{
         font-size: 18px;
@@ -789,7 +854,7 @@ i{
         margin-top: 15px;
     }
     .index-container{
-        height: 100vh;
+        height: 110vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.6fr 1fr;
@@ -827,8 +892,15 @@ i{
         grid-area: right;
     }
     .plate{
-        width: 100%;
+        width: 130%;
         height: 350px;
+        top: -50px;
+        right: 60px;
+    }
+    .plate-sit{
+        width: 85%;
+        height: 350px;
+        margin: 50px 0 -300px 30px;
     
     }
 

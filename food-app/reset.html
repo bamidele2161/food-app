@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="icon" href="./BD.png" type="image/x-icon"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -48,14 +48,11 @@
       <main>
           <div class="form_container">
                 <form class="form" action="#" >
-                    <h1 class="login-f">Login <hr/></h1>
+                    <h1 class="login-f">Reset Password <hr/></h1>
+                    <p class="provide">To reset your password,<br/> provide your email address below</p>
                     <input class="form_input" id="inputEmail" type="text" placeholder="E-mail address">
-                    <input class="form_input" id="inputPassword" type="password" placeholder="Password">
-                    <a href="./reset.html" class="forgot" id="forgot">forgot password ?</a>
-                    <a class="login_btn" id="signin">Login</a>
-                    <div class="form-login">
-                        Don't have an account?<a href="./register.html">Sign Up</a>
-                    </div>
+                    <a class="login_btn" id="forgot">Send Link</a>
+                    <a href="./login.html" class="login">Login</a>
                 </form>
         </div>
       </main>
@@ -93,6 +90,6 @@
       <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
-      <script src="./login.js"></script>
+      <script src="./reset.js"></script>
 </body>
 </html>

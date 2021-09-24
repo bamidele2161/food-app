@@ -12,7 +12,24 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
-let signInButton = document.getElementById('signin')
+let signInButton = document.getElementById('signin');
+let forgotPassword = document.getElementById('forgot');
+forgotPassword.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('clicked')
+    auth.sendPasswordResetEmail(email.value)
+    .then(() => {
+        alert('reset link sent!')
+        window.location='reset.html';
+    })
+    .catch(error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log('error code', errorCode);
+        console.log('error message', errorMessage);
+    }
+})
+
 signInButton.addEventListener('click', (e) => {
     //prevent Default form submission behaviour
     e.preventDefault()

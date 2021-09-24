@@ -80,9 +80,7 @@ hr{
 .forgot{
     margin-left: 180px;
 }
-.form-login{
-    margin-top: 10px;
-}
+
 .login_btn{
     padding: 10px;
     cursor: pointer;
@@ -100,6 +98,9 @@ hr{
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     color: white;
+}
+.login{
+    margin-top: 20px;
 }
 ul{
     float: right;
